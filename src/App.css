@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+ol {
+	list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	background: #eae3c8;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+	display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-card {
+	position: relative;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+input {
+	position: relative;
+	top: 5vh;
+	width: 50vw;
+	height: 1vw;
+	padding: 0.5vw;
+}
+
+.drink-card {
+	background: #cfc5a5;
+	position: relative;
+	border-radius: 1vh;
+	margin: 5vw 0.5vh 0vh 0.5vh;
+	padding: 2vh;
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+	margin: 1vw 0vh;
+	border-radius: 1vh;
 }
